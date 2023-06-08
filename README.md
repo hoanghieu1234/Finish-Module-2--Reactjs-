@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+// cái khoá học của tôi 
+{
+    userId: number
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    mycourse: [
+        {
+        "idCourses": 3,
+        "image": "",
+        "namecourse": "[Fulltime] Web-back-end NextJS Fudamental",
+        "lesson": "10 bài học",
+        "hours": "170 giờ",
+        "session": [
+            {
+                "course": "JS_BE_01: Bài 1: Tổng quan về lập trình server side,kiến trúc và cách vận hành của nodejs"
+            },
+            {
+                "course": "NodeJs fudamental 01"
+            },
+            {
+                "course": "overview2"
+            },
+            {
+                "course": "overview3"
+            }
+  
+        },
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+          {
+        "idCourses": 3,
+        "image": "",
+        "namecourse": "[Fulltime] Web-back-end NextJS Fudamental",
+        "lesson": "10 bài học",
+        "hours": "170 giờ",
+        "session": [
+            {
+                "course": "JS_BE_01: Bài 1: Tổng quan về lập trình server side,kiến trúc và cách vận hành của nodejs"
+            },
+            {
+                "course": "NodeJs fudamental 01"
+            },
+            {
+                "course": "overview2"
+            },
+            {
+                "course": "overview3"
+            }
+  
+        },
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+          {
+        "idCourses": 3,
+        "image": "",
+        "namecourse": "[Fulltime] Web-back-end NextJS Fudamental",
+        "lesson": "10 bài học",
+        "hours": "170 giờ",
+        "session": 
+            {
+                "course": "JS_BE_01: Bài 1: Tổng quan về lập trình server side,kiến trúc và cách vận hành của nodejs"
+            },
+            {
+                "course": "NodeJs fudamental 01"
+            },
+            {
+                "course": "overview2"
+            },
+            {
+                "course": "overview3"
+            }
+  
+        }
+    ]
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+//push myCousre 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+//thang user no dang luu tren local 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+//add vào được rồi 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+==> render ra phía my Cousre
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   dựa vào thằng user đang đăng nhập 
+   mà thằng user của bạn đang lưu ở local 
+    ở component myCourse lấy ra userLogin 
+    sau đó lấy state mycourse từ redux về bằng useSelector 
+    filter hoặc find để lấy ra user tương(check xem nó bằng không) ==> nếu như không có hiển thị ra là bạn chưa có khoá học 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    khi mà vào khoá học(details) phải kiểm tra xem user nó khoá học đó hay chưa ==> có rồi thì disble nút button hoặc chuyển thành nút "Go to Khoá học của bạn" và khi click vào nó sẽ navigate sang trang khoá học của tôi 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    tính năng xoá khoá học của tôi 
+    xoá nó đi 

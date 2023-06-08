@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home-page-introduce {
+  padding: 0 10%;
+  position: relative;
+}
+
+.home-background {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.home-background img {
+  display: block;
+  height: 100vh;
+}
+
+.home-page-content-details {
+  padding-top: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-page-content {
+}
+
+.home-page-header {
+  padding-right: 100px;
+  flex: 1;
+}
+
+.title-custom {
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.title-custom span {
+  font-size: 45px;
+  line-height: 1.1;
+  color: rgb(187, 35, 39);
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.home-page-img {
+  width: 100%;
+  flex: 1;
+}
+
+.home-page-content-img {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+}
+
+.title-decription {
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 24px;
+  margin-left: 27px;
+}
+
+.home-page-input {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+}
+
+.home-page-input input {
+  border-radius: 40px;
+  height: 40px;
+  width: 100%;
+  padding: 5px 20px;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+  line-height: 1.5715;
+  outline: none;
+}
+
+.home-page-input input:hover {
+    border: 1px solid  #c74646;;
+}
+
+.home-page-input span {
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: 13px;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.home-page-input span i {
+  padding-top: 7px;
+  color: white;
+}

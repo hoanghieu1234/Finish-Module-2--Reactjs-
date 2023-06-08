@@ -1,0 +1,229 @@
+.course-details-banner {
+  background-image: url(/public/images/background-course.png);
+  padding-bottom: 70px;
+  width: 100%;
+  position: relative;
+  height: 470px;
+}
+
+.block-banner {
+  width: 70%;
+  position: absolute;
+  right: 14%;
+  top: 20%;
+  height: 80%;
+}
+
+.nav-banner {
+  color: white;
+  list-style-type: circle;
+  margin-bottom: 20px;
+}
+
+.nav-banner ul {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-banner ul li a {
+  font-size: 15px;
+  color: #fff;
+}
+
+.title-banner {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.block-banner strong {
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.inform-course {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.infor span {
+  color: #fff;
+}
+
+.infor i {
+  color: #fff;
+  padding-right: 7px;
+}
+
+.courseNew-container {
+  padding: 2% 15%;
+}
+
+.courNew-container-all {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.course-details-infor {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.course-details-infor span a {
+  color: #bb2327;
+}
+
+.course-details-infor span a:hover {
+  color: blue;
+}
+
+.course-decription h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.course-decription p {
+  line-height: 25px;
+}
+
+.courseNew-Learn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.courseNew-Learn-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.courseNew-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.courseNew-item i {
+  padding-right: 15px;
+}
+
+.courseNew-item span {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.container-right {
+  width: 340px;
+  min-height: 550px;
+  background-color: #fff;
+  box-shadow: 0 0 15px #cbcbcb;
+  border-radius: 8px;
+}
+
+.container-right-img {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.container-right-img img {
+  width: 320px;
+  border-radius: 5px;
+}
+
+.container-right-btn {
+  width: 100%;
+}
+
+.container-right-btn button {
+  width: 90%;
+  width: 90%;
+  margin: 5px 15px;
+  padding: 10px;
+  border: none;
+  background: rgb(187, 35, 39);
+  color: #fff;
+}
+
+.container-right-btn button a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.container-right-infomation {
+  margin-top: 20px;
+}
+
+.right-infomation-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(192, 189, 189);
+}
+
+.right-infomation-1 div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.right-infomation-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(192, 189, 189);
+}
+
+.right-infomation-2 div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.courseNew-content {
+  padding: -1px 10px;
+  border: 1px solid rgb(192, 189, 189);
+}
+
+.courseNew-content .courseNew-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(192, 189, 189);
+  background-color: rgb(238, 235, 235);
+  padding: 10px;
+}
+
+.courseNew-lesson {
+  padding: 10px;
+}
+
+.courseNew-lesson div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.courseNew-lesson div i {
+  color: #bb2327;
+}
+
+.courseNew-lesson div a {
+  color: #bb2327;
+}
+
+.courseNew-lesson div a:hover {
+  color: blue;
+}

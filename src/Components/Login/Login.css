@@ -1,0 +1,131 @@
+.login_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  height: 100vh;
+  width: 70%;
+}
+
+.login-images {
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: url(/public/images/login_image.5f474fe8.png) 50% center / contain
+    no-repeat;
+}
+
+#form-container {
+  background-color: #fff;
+  outline: none;
+  padding: 50px 50px 25px;
+  width: 420px;
+  border-radius: 14px;
+}
+
+.login-title {
+  padding-bottom: 15px;
+}
+
+.login-title h3 {
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.login-email {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  line-height: 40px;
+  padding: 0 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+}
+
+.login-password {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  position: relative;
+}
+
+.login-password i{
+    position: absolute;
+    right: 10px;
+    top: 42px;
+}
+
+.login-password input {
+  font-size: 14px;
+  color: rgb(187, 35, 39);
+}
+
+.login-Form button {
+  width: 100%;
+  line-height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(187, 35, 39);
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.login-forgot-password {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 15px;
+}
+
+.login-forgot-password span {
+  color: rgb(187, 35, 39);
+  padding: 15px;
+}
+
+.back-home {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.back-home a {
+  display: flex;
+  justify-content: start;
+}
+
+.back-home span {
+  color: rgb(187, 35, 39);
+}
+
+.back-home i {
+    color: rgb(187, 35, 39);
+}
+
+.err-msg {
+  color: red; 
+  padding: 5px 5px;
+  margin-bottom: 15px;
+}
+
+.error {
+  border: 1px solid red;
+}
