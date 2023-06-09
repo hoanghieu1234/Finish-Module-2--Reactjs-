@@ -67,6 +67,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .mycourse-item-icon {
@@ -80,4 +81,10 @@
 .mycourse-item-icon h5 {
   margin-left: 10px;
   font-size: 15px;
+  text-align: left;
+}
+
+.mycourse-item-icon p {
+  text-align: left;
+  margin-left: 10px;
 }

@@ -63,7 +63,7 @@
       height: 175px;
   }
   
-  .lesson-item-icon  {
+  .  {
       display: flex;
       flex-direction: column;
       align-content: flex-start;
@@ -71,13 +71,13 @@
       gap: 10px;
   }
   
-  .lesson-item-icon h5 {
+  . h5 {
       margin-left: 10px;
       font-size: 17px;
       text-align: left;
   }
 
-  .lesson-item-icon p {
+  . p {
     font-size: 13px;
   }
   

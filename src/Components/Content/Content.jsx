@@ -24,7 +24,7 @@ const Content = () => {
                 cùng nhau học tập, nâng cao trình độ
               </div>
             </div>
-            <div className="home-page-input">
+            <div className="">
               <input type="text" placeholder="Bạn muốn học gì hôm nay?"/>
               <span>
                 <i className="bx bx-search"></i>

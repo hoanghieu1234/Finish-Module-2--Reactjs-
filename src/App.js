@@ -13,6 +13,10 @@ import CourseOnline from "./Pages/CourseOnline/CourseOnline";
 import LearnCouse from "./Pages/LearnCourse/LearnCouse";
 import MyCourse from "./Pages/myCourse/MyCourse";
 import MyOfCourse from "./Pages/myCourse/MyCourse";
+import AuthAdmin from "./Pages/AuthAdmin/AuthAdmin";
+import Manager_user from "./Components/manager_user/Manager_user";
+import ManagerCourse from "./Components/Manager_Course/ManagerCourse";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -30,14 +34,17 @@ function App() {
         <Route path="/" index element={<Home />} />
         <Route path="/course-details/:id" element={<CourseDetails />} />
         <Route path="/roadmap-list" element={<RouteCourse />} />
-        <Route path="/course-list" element={<CourseOnline/>}/>
-        <Route path="/learn" element={<LearnCouse/>}/>
-        <Route path="/mycourse" element={<MyOfCourse/>}/>
+        <Route path="/course-list" element={<CourseOnline />} />
+        <Route path="/mycourse/learn" element={<LearnCouse />} />
+        <Route path="/mycourse" element={<MyOfCourse />} />
         <Route path="/auth" element={<Auth />}>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
-        <Route path="/uploadImage" element={<UploadImg />} />
+        <Route path="/admin" element={<AuthAdmin/>}>
+          <Route path="" index  element={<ManagerCourse/>}/>
+          <Route path="manager-user" element={<Manager_user/>}/>
+        </Route>
       </Routes>
     </div>
   );

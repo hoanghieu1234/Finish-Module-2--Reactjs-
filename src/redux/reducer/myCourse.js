@@ -5,7 +5,7 @@ const myCourseSlice = createSlice({
   initialState: JSON.parse(localStorage.getItem("my-course")) ||  [],
   reducers: {
     addToMyCourse: (state, action) => {
-        // find user tương ứng
+        // find user tương ứng, push vào khoá học của tôi
      const userIndex =  state.findIndex((course) => +course.userId === +action.payload.userId) 
 
      if(userIndex === -1 ) {

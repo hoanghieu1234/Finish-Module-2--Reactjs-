@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MyCourse.css";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -6,9 +6,10 @@ import { useNavigate } from "react-router-dom";
 const MyCourse = () => {
   const myCourse = useSelector((state) => state.mycourse);
   const userLogin = JSON.parse(localStorage.getItem("users"));
+  const [isLogin, setIsLogin] = useState(false);
 
-  const myCourses = myCourse.find((course) => course.userId === userLogin.id);
-  console.log(131, myCourses?.myCourse);
+  const myCourses = myCourse.find((course) => course.userId === userLogin?.id);
+
   const courseCount = myCourses?.myCourse?.length || 0; // Lấy độ dài của khoá học
   // console.log("state của my-course", myCourse);
 
@@ -21,6 +22,28 @@ const MyCourse = () => {
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value); // Cập nhật giá trị từ ô tìm kiếm
   };
+
+  const navigate = useNavigate();
+
+  const handleClickBox = () => {
+    navigate("/mycourse/learn");
+  };
+
+  // Chặn dùng url để vào trang khoá học của tôi.
+
+  useEffect(() => {
+    const storeUser = JSON.parse(localStorage.getItem("users"));
+    if (storeUser) {
+      setIsLogin(true);
+    } else {
+      setIsLogin(false);
+      navigate("/auth/login");
+    }
+  }, []);
+
+  if (!isLogin) {
+    return null;
+  }
 
   return (
     <div className="my-course">
@@ -43,7 +66,7 @@ const MyCourse = () => {
         {filteredCourses &&
           filteredCourses.map((item) => {
             return (
-              <div className="my-box" key={item?.id}>
+              <div className="my-box" key={item?.id} onClick={handleClickBox}>
                 <div className="mycourse-item-image">
                   <img src={item?.image} alt="" />
                 </div>

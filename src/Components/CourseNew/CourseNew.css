@@ -138,6 +138,7 @@
 .container-right-img img {
   width: 320px;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .container-right-btn {
@@ -152,6 +153,13 @@
   border: none;
   background: rgb(187, 35, 39);
   color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.container-right-btn button:hover {
+  background-color: red;
 }
 
 .container-right-btn button a {

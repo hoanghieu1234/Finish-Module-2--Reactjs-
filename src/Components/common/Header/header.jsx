@@ -20,15 +20,17 @@ const Header = () => {
     localStorage.removeItem("users");
   };
 
+ 
   return (
     <header className="header">
       <nav className="navbar">
         <div className="content">
           <a href="/">
             <img
-              src={process.env.PUBLIC_URL + "./images/RIKKEI_ACADEMY_LOGO.png"}
+              src= "./images/RIKKEI_ACADEMY_LOGO.png"
               alt=""
               srcSet=""
+
             />
           </a>
           {/* Navigation */}
@@ -67,7 +69,7 @@ const Header = () => {
           {login ? (
             <div className="dropdown">
               <div className="user-avatar" onClick={handleDropdownToggle}>
-                <img src="images/RIKKEI_ACADEMY_LOGO.png" alt="" srcset="" />
+                <img src="/images/class_cap1.jpg" alt="" srcset=""/>
               </div>
               {dropdownOpen && (
                 <ul className="dropdown-menu">
@@ -89,7 +91,7 @@ const Header = () => {
               Đăng Nhập
             </Link>
           )}
-          {login && <span className="username">{login.email}</span>}
+          {login && <span className="username">{login.username}</span>}
         </div>
       </nav>
     </header>

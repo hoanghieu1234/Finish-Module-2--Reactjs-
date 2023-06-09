@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./learning.css";
+import { useNavigate } from "react-router-dom";
 
 const Learning = () => {
+  const checkLogin = JSON.parse(localStorage.getItem("users"));
+  const navigate = useNavigate();
+  useEffect(() => {
+      if(!checkLogin) {
+        navigate('/auth/login');
+      }
+  },[]);
   return (
     <div className="learning-lesson">
       {/* nav */}
@@ -41,7 +49,11 @@ const Learning = () => {
       <div className="learning-less-content">
         <div className="learning-left-lesson">
           <div class="leaning-image-container">
-            <img src="/images/fb.png" alt="" srcset="" />
+            <img
+              src="https://blog.freec.asia/wp-content/uploads/2022/06/python-roadmap.jpg"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
         <div className="learning-right-lesson">
