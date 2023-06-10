@@ -77,7 +77,12 @@
   position: relative;
 }
 
-.home-page-input input {
+.input-content {
+  margin-top: 15px;
+  position: relative;
+}
+
+.input-content #input-content-id {
   border-radius: 40px;
   height: 40px;
   width: 100%;
@@ -88,22 +93,24 @@
   outline: none;
 }
 
-.home-page-input input:hover {
+#input-content-id:hover {
     border: 1px solid  #c74646;;
 }
 
-.home-page-input span {
+.input-content .icon-content {
+  
   cursor: pointer;
   position: absolute;
-  top: 4px;
-  right: 13px;
+  top: 5px;
+  right: 10px;
+  text-align: center;
   background-color: red;
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
-.home-page-input span i {
+.input-content .icon-content i {
   padding-top: 7px;
   color: white;
 }

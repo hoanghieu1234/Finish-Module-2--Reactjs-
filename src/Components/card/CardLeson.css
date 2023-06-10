@@ -54,16 +54,17 @@
       cursor: pointer;
   }
   
-  .lesson-item-image {
+  .card-lesson-item {
       margin-bottom: 15px;
   }
-  .lesson-item-image img {
+  .card-lesson-item img {
+      object-fit: contain;
       border-radius: 5px;
       width: 287px;
       height: 175px;
   }
   
-  .  {
+  .lesson-learn-course  {
       display: flex;
       flex-direction: column;
       align-content: flex-start;
@@ -71,13 +72,13 @@
       gap: 10px;
   }
   
-  . h5 {
+  .lesson-learn-course  h5 {
       margin-left: 10px;
       font-size: 17px;
-      text-align: left;
+      text-align: center;
   }
 
-  . p {
+  .lesson-learn-course p {
     font-size: 13px;
   }
   

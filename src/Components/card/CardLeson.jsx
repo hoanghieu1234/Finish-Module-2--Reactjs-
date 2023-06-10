@@ -11,7 +11,7 @@ const CardLeson = (props) => {
       className="lesson-learn-course"
     >
       <div className="lesson-box">
-        <div className="lesson-item-image">
+        <div className="card-lesson-item">
           <img src={props.leson.image} alt="" />
         </div>
         <div className="lesson-item-icon">

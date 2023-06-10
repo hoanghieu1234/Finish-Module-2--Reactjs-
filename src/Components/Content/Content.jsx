@@ -24,11 +24,15 @@ const Content = () => {
                 cùng nhau học tập, nâng cao trình độ
               </div>
             </div>
-            <div className="">
-              <input type="text" placeholder="Bạn muốn học gì hôm nay?"/>
-              <span>
+            <div className="input-content">
+              <input
+                type="text"
+                id="input-content-id"
+                placeholder="Bạn muốn học gì hôm nay?"
+              />
+              <div className="icon-content">
                 <i className="bx bx-search"></i>
-              </span>
+              </div>
             </div>
           </div>
           <div className="home-page-img">

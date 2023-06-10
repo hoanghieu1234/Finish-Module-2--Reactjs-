@@ -28,7 +28,7 @@ const Register = () => {
     if (e.target.name === "password" && e.target.value !== "") {
       setErrPassword(false);
     }
-    setInputValue({ ...inputValue, [e.target.name]: e.target.value });
+    setInputValue({ ...inputValue, [e.target.name]: e.target.value, role:2 });
   };
 
   const handleSubmit = async (e) => {

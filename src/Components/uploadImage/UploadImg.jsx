@@ -8,6 +8,7 @@ const UploadImg = () => {
     const fileImg = e.target.files[0];
 
     if (!fileImg) return;
+    
     const imgref = ref(storage, `images/${fileImg.name}`);
     uploadBytes(imgref, fileImg).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {

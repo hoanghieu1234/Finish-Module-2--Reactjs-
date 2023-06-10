@@ -7,8 +7,7 @@ const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const navigate = useNavigate();
   const userLocal = JSON.parse(localStorage.getItem("users"));
-  const location = useLocation();
-
+ 
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
   };

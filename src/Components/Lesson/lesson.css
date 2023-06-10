@@ -63,6 +63,9 @@
   margin-bottom: 15px;
 }
 .lesson-item-image img {
+  width: 270px;
+  height: 160px;
+  object-fit: contain;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

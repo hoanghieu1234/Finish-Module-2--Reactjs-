@@ -1,12 +1,18 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import { handleCallApiCourseNew } from "../../redux/reducer/courseNewSlice";
+import { useDispatch } from "react-redux";
 
 const AuthAdmin = () => {
-  return (
- 
-        <Outlet/>
-  
-  )
-}
+  const dispatch = useDispatch();
+  useEffect(() => {
+    const handleApi = async () => {
+      await dispatch(handleCallApiCourseNew()).unwrap();
+    };
 
-export default AuthAdmin
+    handleApi();
+  }, []);
+  return <Outlet />;
+};
+
+export default AuthAdmin;

@@ -79,7 +79,10 @@
 }
 
 .course-item-img img {
-  width: 100%;
+  margin-left: 6px;
+  width: 343px;
+  height: 235px;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -107,6 +110,7 @@
   color: #000;
 }
 
-.item-footer i,span {
+.item-footer i,
+span {
   color: #000;
 }

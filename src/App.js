@@ -16,7 +16,8 @@ import MyOfCourse from "./Pages/myCourse/MyCourse";
 import AuthAdmin from "./Pages/AuthAdmin/AuthAdmin";
 import Manager_user from "./Components/manager_user/Manager_user";
 import ManagerCourse from "./Components/Manager_Course/ManagerCourse";
-
+import RequiredAuth from "./Components/RequiredAuth/Required";
+import RequiredAdmin from "./Components/RequiredAuth/Required";
 
 function App() {
   const dispatch = useDispatch();
@@ -41,9 +42,11 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
-        <Route path="/admin" element={<AuthAdmin/>}>
-          <Route path="" index  element={<ManagerCourse/>}/>
-          <Route path="manager-user" element={<Manager_user/>}/>
+        <Route element={<RequiredAdmin />}>
+          <Route path="/admin" element={<AuthAdmin />}>
+            <Route path="" index element={<ManagerCourse />} />
+            <Route path="manager-user" element={<Manager_user />} />
+          </Route>
         </Route>
       </Routes>
     </div>
