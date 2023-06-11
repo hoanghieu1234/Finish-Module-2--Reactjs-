@@ -12,7 +12,7 @@ const LearningPath = () => {
         {/* course1 */}
         <div className="course">
           <div className="path-img">
-            <img src="images/reactjs.png" alt="" srcset="" />
+            <img src="images/reactjs.png" alt=""  />
           </div>
           <div className="path-content">
             <div className="path-content-title">
@@ -20,11 +20,11 @@ const LearningPath = () => {
             </div>
 
             <div>
-              <i class="bx bxs-time"></i>
+              <i className="bx bxs-time"></i>
               <span>192 giờ</span>
             </div>
             <div>
-              <i class="bx bxs-graduation"></i>
+              <i className="bx bxs-graduation"></i>
               <p>Chương trình đào tạo fullstack dành cho những ai...</p>
             </div>
           </div>
@@ -37,7 +37,7 @@ const LearningPath = () => {
         {/* course2 */}
         <div className="course">
           <div className="path-img">
-            <img src="images/reactjs.png" alt="" srcset="" />
+            <img src="images/reactjs.png" alt="" />
           </div>
           <div className="path-content">
             <div className="path-content-title">
@@ -45,11 +45,11 @@ const LearningPath = () => {
             </div>
 
             <div>
-              <i class="bx bxs-time"></i>
+              <i className="bx bxs-time"></i>
               <span>192 giờ</span>
             </div>
             <div>
-              <i class="bx bxs-graduation"></i>
+              <i className="bx bxs-graduation"></i>
               <p>Chương trình đào tạo fullstack dành cho những ai...</p>
             </div>
           </div>
@@ -62,7 +62,7 @@ const LearningPath = () => {
         {/* course3 */}
         <div className="course">
           <div className="path-img">
-            <img src="images/reactjs.png" alt="" srcset="" />
+            <img src="images/reactjs.png" alt="" />
           </div>
           <div className="path-content">
             <div className="path-content-title">
@@ -70,11 +70,11 @@ const LearningPath = () => {
             </div>
 
             <div>
-              <i class="bx bxs-time"></i>
+              <i className="bx bxs-time"></i>
               <span>192 giờ</span>
             </div>
             <div>
-              <i class="bx bxs-graduation"></i>
+              <i className="bx bxs-graduation"></i>
               <p>Chương trình đào tạo fullstack dành cho những ai...</p>
             </div>
           </div>
@@ -87,7 +87,7 @@ const LearningPath = () => {
         {/* course4 */}
         <div className="course">
           <div className="path-img">
-            <img src="images/reactjs.png" alt="" srcset="" />
+            <img src="images/reactjs.png" alt="" />
           </div>
           <div className="path-content">
             <div className="path-content-title">
@@ -95,11 +95,11 @@ const LearningPath = () => {
             </div>
 
             <div>
-              <i class="bx bxs-time"></i>
+              <i className="bx bxs-time"></i>
               <span>192 giờ</span>
             </div>
             <div>
-              <i class="bx bxs-graduation"></i>
+              <i className="bx bxs-graduation"></i>
               <p>Chương trình đào tạo fullstack dành cho những ai...</p>
             </div>
           </div>

@@ -36,6 +36,7 @@ const userSlice = createSlice({
   },
 });
 
+// eslint-disable-next-line no-unused-vars
 const { actions, reducer } = userSlice;
 
 export default reducer;

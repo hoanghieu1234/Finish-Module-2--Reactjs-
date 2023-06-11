@@ -110,7 +110,7 @@ const CourseNew = () => {
               <span>Cơ bản</span>
             </div>
             <div className="infor">
-              <i class="bx bx-user"></i>
+              <i className="bx bx-user"></i>
               <span>1141 học viên đăng ký</span>
             </div>
           </div>
@@ -160,30 +160,30 @@ const CourseNew = () => {
               <div className="courseNew-Learn-left">
                 <div className="courseNew-cols-1">
                   <div className="courseNew-item">
-                    <i class="bx bx-time"></i>
+                    <i className="bx bx-time"></i>
                     <span>HTML5</span>
                   </div>
                   <div className="courseNew-item">
-                    <i class="bx bx-time"></i>
+                    <i className="bx bx-time"></i>
                     <span>Git,GitHup</span>
                   </div>
                   <div className="courseNew-item">
-                    <i class="bx bx-time"></i>
+                    <i className="bx bx-time"></i>
                     <span>Grid Layout</span>
                   </div>
                 </div>
 
                 <div className="courseNew-cols-2">
                   <div className="courseNew-item">
-                    <i class="bx bx-time"></i>
+                    <i className="bx bx-time"></i>
                     <span>css3</span>
                   </div>
                   <div className="courseNew-item">
-                    <i class="bx bx-time"></i>
+                    <i className="bx bx-time"></i>
                     <span>Git-flow</span>
                   </div>
                   <div className="courseNew-item">
-                    <i class="bx bx-time"></i>
+                    <i className="bx bx-time"></i>
                     <span>Flex Layout</span>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ const CourseNew = () => {
                   data?.session?.map((item, index) => {
                     return (
                       <div key={index}>
-                        <i class="bx bx-book-open"></i>
+                        <i className="bx bx-book-open"></i>
                         <a>{item.course}</a>
                       </div>
                     );
@@ -213,28 +213,28 @@ const CourseNew = () => {
           </div>
           <div className="container-right">
             <div className="container-right-img">
-              <img src={data?.image} alt="" srcset="" />
+              <img src={data?.image} alt="" />
             </div>
             <div className="container-right-btn">
               <button onClick={handleGetPost}>Thêm vào khoá học</button>
               <div className="container-right-infomation">
                 <div className="right-infomation-1">
                   <div>
-                    <i class="bx bx-book-open"></i>
+                    <i className="bx bx-book-open"></i>
                     <p>Chương</p>
                   </div>
                   <div>19</div>
                 </div>
                 <div className="right-infomation-2">
                   <div>
-                    <i class="bx bxs-book-content"></i>
+                    <i className="bx bxs-book-content"></i>
                     <p>Bài kiểm tra</p>
                   </div>
                   <div>0</div>
                 </div>
                 <div className="right-infomation-2">
                   <div>
-                    <i class="bx bx-time-five"></i>
+                    <i className="bx bx-time-five"></i>
                     <p>{data?.hours}</p>
                   </div>
                   <div>0</div>

@@ -6,7 +6,7 @@
 }
 
 .header {
-  padding: 10px 20px;
+  padding: 10px 10%;
   width: 100%;
   box-shadow: 0 0 6px 0 rgb(163, 165, 167);
   background: #fff;
@@ -14,10 +14,18 @@
   z-index: 1;
 }
 
+#check-list {
+  display: none;
+}
+
+#check-list i {
+  font-size: 22px;
+  cursor: pointer;
+}
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .content {
   display: flex;
@@ -106,7 +114,7 @@
   z-index: 1000;
   background-color: #fff;
   border: 1px solid #ccc;
-  width: 250px; /* Định dạng width */
+  width: 250px;
 }
 
 .dropdown .dropdown-menu::before {
@@ -122,15 +130,15 @@
 
 .dropdown .dropdown-menu li {
   padding: 10px;
-  border-bottom: 1px solid #ccc; /* Định dạng border bottom */
+  border-bottom: 1px solid #ccc;
 }
 
 .dropdown .dropdown-menu li i {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .dropdown .dropdown-menu li:last-child {
-  border-bottom: none; /* Loại bỏ border bottom cho phần tử cuối cùng */
+  border-bottom: none;
 }
 
 .dropdown .dropdown-menu li a {
@@ -142,8 +150,114 @@
   display: block;
 }
 
-
 .ul-nav li i {
   padding-right: 10px;
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,.45);
+  z-index: 3000;
+}
+
+.wrapper-content {
+  width: 60vw;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.wrapper-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.wrapper-body {
+  padding: 16px 24px;
+}
+
+.wrapper-header i {
+  font-size: 20px;
+}
+
+.wrapper-body ul li i {
+  padding-right: 8px;
+  font-size: 17px;
+}
+
+.wrapper-body ul li .Link {
+  font-size: 17px;
+  color: #000;
+}
+
+.wrapper-body ul li:first-child {
+  display: flex;
+  gap: 10px
+}
+
+/* ------------------------- */
+
+/* Responsive CSS for 768px */
+
+@media screen and (max-width: 768px) {
+  .content a img {
+    width: 140px;
+  }
+
+  .navbar .ul-nav {
+    padding-left: 10px;
+  }
+
+  .action-link {
+    width: 100px;
+    padding: 6px 6px;
+  }
+
+  .user-avatar {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .notify-group {
+    gap: 8px;
+  }
+
+  .username {
+    font-size: 14px;
+  }
+
+  .dropdown .dropdown-menu {
+    top: 120%;
+    width: 200px;
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar {
+    width: 100%;
+  }
+  .notify-group {
+    display: none;
+  }
+  .ul-nav {
+    display: none !important; /* Ẩn danh sách chính */
+  }
+  .content {
+    justify-content: space-between;
+    width: 100%;
+  }
+  #check-list {
+    display: block;
+  }
+
+  .input-content {
+    position: relative;
+  }
+  .input-content .icon-content {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+}

@@ -13,7 +13,7 @@ const Roadmap = () => {
         <div className="card-pages-home">
           <div className="card-pages-home-row">
             <div className="icons">
-              <i class="bx bxl-javascript"></i>
+              <i className="bx bxl-javascript"></i>
             </div>
             <div>Javascipts</div>
           </div>
@@ -21,7 +21,7 @@ const Roadmap = () => {
         <div className="card-pages-home">
           <div className="card-pages-home-row">
             <div className="icons">
-              <i class="bx bxl-react"></i>
+              <i className="bx bxl-react"></i>
             </div>
             <div>ReactJS</div>
           </div>
@@ -29,7 +29,7 @@ const Roadmap = () => {
         <div className="card-pages-home">
           <div className="card-pages-home-row">
             <div className="icons">
-              <i class="bx bxl-nodejs"></i>
+              <i className="bx bxl-nodejs"></i>
             </div>
             <div>NodeJS</div>
           </div>
@@ -45,7 +45,7 @@ const Roadmap = () => {
         <div className="card-pages-home">
           <div className="card-pages-home-row">
             <div className="icons">
-              <i class="bx bxl-react"></i>
+              <i className="bx bxl-react"></i>
             </div>
             <div>ReactJS</div>
           </div>
@@ -53,7 +53,7 @@ const Roadmap = () => {
         <div className="card-pages-home">
           <div className="card-pages-home-row">
             <div className="icons">
-              <i class="bx bxl-react"></i>
+              <i className="bx bxl-react"></i>
             </div>
             <div>ReactJS</div>
           </div>

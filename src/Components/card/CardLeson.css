@@ -1,86 +1,248 @@
+/* .lesson {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.lesson h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.lesson-filter {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  align-items: center;
+}
+
+.lesson-filter span {
+  color: #bb2327;
+}
+
+.lesson-filter-item input {
+  height: 50px;
+  width: 450px;
+  overflow: hidden;
+  background: hsla(0, 0%, 100%, 0);
+  border-radius: 50px;
+  position: relative;
+  border: 1px solid #4b5563;
+  padding: 5px 20px;
+}
+
+.lesson-filter-item i {
+  position: absolute;
+  top: 208px;
+  right: 162px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.lesson-filter-item i:hover {
+  color: #bb2327;
+}
+
+.lesson-learn-course .lesson-box {
+  padding: 5px 5px;
+  border: 1px solid #e7e7ec;
+  box-shadow: 0 0.5rem 0.937rem rgba(140, 152, 164, 0.1);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.card-lesson-item {
+  margin-bottom: 15px;
+}
+.card-lesson-item img {
+  object-fit: contain;
+  border-radius: 5px;
+  width: 287px;
+  height: 175px;
+}
+
+.lesson-learn-course {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: start;
+  gap: 10px;
+}
+
+.lesson-learn-course h5 {
+  margin-left: 10px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.lesson-learn-course p {
+  font-size: 13px;
+}
+
+/* responsive */
+
+/* Responsive CSS for lesson-box */
+/* .lesson-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-lesson-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.card-lesson-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.lesson-item-icon {
+  flex: 1 1 auto;
+}
+
+.lesson-item-icon h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.lesson-item-icon p {
+  font-size: 14px;
+  line-height: 1.5;
+}  */
+
+
+
 .lesson {
-    padding-top: 100px;
-    text-align: center;
-  }
-  
-  .lesson h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.2;
-  }
-  
-  .lesson-filter {
-    padding: 0 10%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-    align-items: center;
-  }
-  
-  .lesson-filter span {
-    color: #bb2327;
-  }
-  
-  .lesson-filter-item  input{
-      height: 50px;
-      width: 450px;
-      overflow: hidden;
-      background: hsla(0,0%,100%,0);
-      border-radius: 50px;
-      position: relative;
-      border: 1px solid #4b5563;
-      padding: 5px 20px;
-  }
-  
-  .lesson-filter-item  i {
-      position: absolute;
-      top: 208px;
-      right: 162px;
-      font-size: 25px;
-      cursor: pointer;
-  }
-  
-  
-  .lesson-filter-item  i:hover {
-      color: #bb2327;
-  }
-  
+  padding-top: 100px;
+  text-align: center;
+}
 
-  .lesson-learn-course .lesson-box {
-      padding: 5px 5px;
-      border: 1px solid #e7e7ec;
-      box-shadow: 0 0.5rem 0.937rem rgba(140,152,164,.1);
-      border-radius: 0.25rem;
-      cursor: pointer;
+.lesson h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.lesson-filter {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  align-items: center;
+}
+
+.lesson-filter span {
+  color: #bb2327;
+}
+
+.lesson-filter-item input {
+  height: 50px;
+  width: 450px;
+  overflow: hidden;
+  background: hsla(0, 0%, 100%, 0);
+  border-radius: 50px;
+  position: relative;
+  border: 1px solid #4b5563;
+  padding: 5px 20px;
+}
+
+.lesson-filter-item i {
+  position: absolute;
+  top: 208px;
+  right: 162px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.lesson-filter-item i:hover {
+  color: #bb2327;
+}
+
+.lesson-learn-course .lesson-box {
+  padding: 5px 5px;
+  border: 1px solid #e7e7ec;
+  box-shadow: 0 0.5rem 0.937rem rgba(140, 152, 164, 0.1);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.card-lesson-item {
+  margin-bottom: 15px;
+}
+
+.card-lesson-item img {
+  object-fit: contain;
+  border-radius: 5px;
+  width: 287px;
+  height: 175px;
+}
+
+.lesson-learn-course {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: start;
+  gap: 10px;
+}
+
+.lesson-learn-course h5 {
+  margin-left: 10px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.lesson-learn-course p {
+  font-size: 13px;
+}
+
+/* Responsive CSS for lesson-box */
+@media screen and (max-width: 768px) {
+  .lesson-filter-item input {
+    width: 350px;
   }
-  
-  .card-lesson-item {
-      margin-bottom: 15px;
-  }
+
   .card-lesson-item img {
-      object-fit: contain;
-      border-radius: 5px;
-      width: 287px;
-      height: 175px;
-  }
-  
-  .lesson-learn-course  {
-      display: flex;
-      flex-direction: column;
-      align-content: flex-start;
-      align-items: start;
-      gap: 10px;
-  }
-  
-  .lesson-learn-course  h5 {
-      margin-left: 10px;
-      font-size: 17px;
-      text-align: center;
+    width: 80px;
+    height: 80px;
   }
 
-  .lesson-learn-course p {
-    font-size: 13px;
+  .lesson-item-icon h5 {
+    font-size: 16px;
   }
-  
-  
-  
+
+  .lesson-item-icon p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lesson-filter-item input {
+    width: 250px;
+  }
+
+  .lesson-filter-item i {
+    top: 108px;
+    right: 62px;
+  }
+
+  .card-lesson-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .lesson-item-icon h5 {
+    font-size: 14px;
+  }
+
+  .lesson-item-icon p {
+    font-size: 11px;
+  }
+}
+
+
+

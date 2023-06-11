@@ -56,3 +56,29 @@
     font-size: 48px;
     padding-bottom: 10px;
 }
+
+
+
+/* ---------- */
+
+@media screen and (max-width: 768px) {
+  .roadmaps-home-page {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .roadmaps-home-page {
+    padding: 0 3%;
+  }
+
+  .roadmaps-home-pages-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .roadmaps-home-pages-row .card-pages-home {
+    height: auto;
+    max-width: 100%;
+  }
+}

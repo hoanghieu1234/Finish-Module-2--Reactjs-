@@ -95,7 +95,7 @@ const HeadAdmin = () => {
           <tr>
             <th scope="row">1</th>
             <td>
-              <img src="" alt="" srcSet="" />
+              <img src="" alt="" />
             </td>
             <td>Otto</td>
             <td>@mdo</td>

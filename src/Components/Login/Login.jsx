@@ -106,7 +106,7 @@ const Login = () => {
             {errPassword && (
               <span className="err-msg">Nhập password của bạn </span>
             )}
-            <i class="fa-sharp fa-solid fa-eye-slash"></i>
+            <i className="fa-sharp fa-solid fa-eye-slash"></i>
           </div>
           <Link to ="/auth/register" className="login-forgot-password">
             <span>Bạn chưa có tài khoản ?</span>

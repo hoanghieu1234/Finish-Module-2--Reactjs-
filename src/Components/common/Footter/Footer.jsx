@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="footer-tops-1">
             <div className="footer-row-1">
               <div className="img-footer">
-                <img src="images/logo-Rikkei-while.png" alt="" srcset="" />
+                <img src="images/logo-Rikkei-while.png" alt="" />
               </div>
               <div className="title-footer">
                 <h3>Để nông dân biết code</h3>
@@ -17,21 +17,21 @@ const Footer = () => {
             <div className="footer-row-2">
               <div className="item">
                 <div className="item-1">
-                  <i class="bx bxs-phone-call"></i>
+                  <i className="bx bxs-phone-call"></i>
                   <p>Điện thoại: 0245678</p>
                 </div>
               </div>
 
               <div className="item">
                 <div className="item-2">
-                  <i class="bx bx-envelope"></i>
+                  <i className="bx bx-envelope"></i>
                   <p>Email:Hieunguyenhl123@gmail.com</p>
                 </div>
               </div>
 
               <div className="item">
                 <div className="item-3">
-                  <i class="bx bx-location-plus"></i>
+                  <i className="bx bx-location-plus"></i>
                   <p>
                     Địa chỉ: Tầng 7 khối A tòa nhà Sông Đà, đường Phạm Hùng ,
                     Phường Mỹ Đình 1, Quận Nam Từ Liêm, Thành phố Hà Nội, Việt

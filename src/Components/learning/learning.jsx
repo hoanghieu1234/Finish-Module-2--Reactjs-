@@ -16,7 +16,7 @@ const Learning = () => {
       <nav>
         <div className="learn-nav-left">
           <div>
-            <i class="bx bxs-file-blank"></i>
+            <i className="bx bxs-file-blank"></i>
           </div>
           <div>
             <h5>Web Front-end with ReactJs</h5>
@@ -25,21 +25,21 @@ const Learning = () => {
         <div className="learn-nav-right">
           <div className="nav-right">
             <div className="nav-right-item">
-              <i class="bx bxs-badge-check"></i>
+              <i className="bx bxs-badge-check"></i>
               <p>Chương: 16</p>
             </div>
           </div>
 
           <div className="nav-right">
             <div className="nav-right-item">
-              <i class="bx bxs-file-export"></i>
+              <i className="bx bxs-file-export"></i>
               <p>Kiểm tra đã nộp</p>
             </div>
           </div>
 
           <div className="nav-right">
             <div className="nav-right-item">
-              <i class="bx bx-question-mark"></i>
+              <i className="bx bx-question-mark"></i>
               <p>Hướng dẫn</p>
             </div>
           </div>
@@ -48,20 +48,20 @@ const Learning = () => {
       {/* scroll */}
       <div className="learning-less-content">
         <div className="learning-left-lesson">
-          <div class="leaning-image-container">
+          <div className="leaning-image-container">
             <img
               src="https://blog.freec.asia/wp-content/uploads/2022/06/python-roadmap.jpg"
               alt=""
-              srcset=""
+           
             />
           </div>
         </div>
         <div className="learning-right-lesson">
-          <div class="learning-right-title">
+          <div className="learning-right-title">
             <h3 id="dropdown-heading">Nội dung bài học</h3>
-            <div class="lesson-prepare">
+            <div className="lesson-prepare">
               <h4>[Chuẩn bị] Session 01 - ReactJS overview</h4>
-              <ul class="dropdown-content">
+              <ul className="dropdown-content">
                 <li>
                   <a href="">Tổng quan về ReactJS</a>
                 </li>

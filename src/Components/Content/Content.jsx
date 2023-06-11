@@ -7,7 +7,6 @@ const Content = () => {
         <img
           src="https://transvelo.github.io/skola-html/5.1/assets/img/illustrations/illustration-7.svg"
           alt=""
-          srcset=""
         />
       </div>
       <div className="home-page-content">
@@ -39,7 +38,6 @@ const Content = () => {
             <img
               src="https://transvelo.github.io/skola-html/5.1/assets/img/illustrations/illustration-5.png"
               alt=""
-              srcset=""
               className="home-page-content-img"
             />
           </div>

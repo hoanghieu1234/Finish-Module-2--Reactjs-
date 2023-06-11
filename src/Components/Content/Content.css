@@ -114,3 +114,60 @@
   padding-top: 7px;
   color: white;
 }
+
+
+
+
+/* Responsive CSS for lesson-box */
+
+@media screen and (max-width: 768px) {
+  .lesson-filter-item input {
+    width: 350px;
+  }
+
+  .card-lesson-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .lesson-item-icon h5 {
+    font-size: 16px;
+  }
+
+  .lesson-item-icon p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .home-page-introduce {
+    padding: 0 5%;
+  }
+
+  .home-page-content-details {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .home-page-header {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .title-custom {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .home-page-img {
+    margin-top: 30px;
+  }
+
+  .title-decription {
+    margin-left: 0;
+  }
+
+  .input-content #input-content-id {
+    width: 100%;
+  }
+}

@@ -24,7 +24,7 @@ const Lesson = () => {
         </div>
         <div className="lesson-filter-item">
           <input type="text" placeholder="Tìm kiếm khoá học" onChange={handleSearchChange} value={searchTerm}/>
-          <i class="bx bx-search"></i>
+          <i className="bx bx-search"></i>
         </div>
       </div>
       <div className="card-lesson">

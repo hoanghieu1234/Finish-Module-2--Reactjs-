@@ -104,8 +104,63 @@
 }
 
 .link-all-course strong:hover {
-    display: inline-block;
-    border-bottom: 2.7px solid #bb2327;
-    transition: transform 0.3s ease;
-    transform: translateX(5px);
+  display: inline-block;
+  border-bottom: 2.7px solid #bb2327;
+  transition: transform 0.3s ease;
+  transform: translateX(5px);
+}
+
+/* ---------------------- */
+
+/* Responsive CSS for LearningPath */
+
+@media screen and (max-width: 768px) {
+  .course {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  .learningpath {
+    padding: 0 5%;
+  }
+
+  .learning-path-course {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+  }
+
+  .path-index-course {
+    width: 80px;
+    height: 70px;
+    margin-left: 10px;
+    padding-top: 8px;
+  }
+
+  .path-index-course span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .learningpath {
+    padding: 0 3%;
+  }
+
+  .course {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .course .path-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .path-content-title h5 {
+    font-size: 14px;
+  }
+
+  .path-content div p {
+    font-size: 10px;
+  }
 }

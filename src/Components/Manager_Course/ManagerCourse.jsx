@@ -207,7 +207,7 @@ const ManagerCourse = () => {
                           {file && <p>Selected file: {file.name}</p>}
                         </div>
                         {showEdit && (
-                          <i class="bx bxs-message-x" onClick={toggleForm}></i>
+                          <i className="bx bxs-message-x" onClick={toggleForm}></i>
                         )}
                         <button type="submit" className="btn btn-primary">
                           Submit

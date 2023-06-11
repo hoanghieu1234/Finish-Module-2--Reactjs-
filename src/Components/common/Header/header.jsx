@@ -7,7 +7,15 @@ const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const navigate = useNavigate();
   const userLocal = JSON.parse(localStorage.getItem("users"));
- 
+  const [showList, setShowList] = useState(false);
+
+  console.log({ login });
+
+  // showList 414
+  const handleShowList = () => {
+    setShowList(!showList);
+  };
+  // togle đăng xuất
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -19,44 +27,39 @@ const Header = () => {
     localStorage.removeItem("users");
   };
 
- 
   return (
     <header className="header">
       <nav className="navbar">
         <div className="content">
-          <a href="/">
-            <img
-              src= "./images/RIKKEI_ACADEMY_LOGO.png"
-              alt=""
-              srcSet=""
-
-            />
-          </a>
-          {/* Navigation */}
+          <Link href="/">
+            <img src="./images/RIKKEI_ACADEMY_LOGO.png" alt="" />
+          </Link>
+          <div id="check-list">
+            <i className="bx bx-list-ul" onClick={handleShowList}></i>
+          </div>
           <ul className="ul-nav">
             <li>
-              <NavLink exact to="/" activeClassName="active">
-                {" "}
-                <i className="bx bx-home" style={{ paddingRight: 5 }} />
-                Trang Chủ{" "}
-              </NavLink>
+              <Link to="/">
+                <i className="bx bx-home" />
+                Trang Chủ
+              </Link>
             </li>
             <li>
-              <NavLink to="/roadmap-list" activeClassName="active">
-                <i class="bx bx-outline"></i>
+              <Link to="/roadmap-list">
+                <i className="bx bx-outline"></i>
                 Lộ trình
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <Link to="/course-list" activeClassName="active">
-                <i class="bx bxs-book-open"></i>
+              <Link to="/course-list">
+                <i className="bx bxs-book-open"></i>
                 Khoá Học
               </Link>
             </li>
             {userLocal && (
               <li>
-                <Link to="/mycourse" activeClassName="active">
-                  <i class="bx bxs-book-alt"></i>
+                <Link to="/mycourse" className={{ isActive: true }}>
+                  <i className="bx bxs-book-alt"></i>
                   Khoá học của tôi
                 </Link>
               </li>
@@ -68,16 +71,16 @@ const Header = () => {
           {login ? (
             <div className="dropdown">
               <div className="user-avatar" onClick={handleDropdownToggle}>
-                <img src="/images/class_cap1.jpg" alt="" srcset=""/>
+                <img src="/images/class_cap1.jpg" alt="" />
               </div>
               {dropdownOpen && (
                 <ul className="dropdown-menu">
                   <li>
-                    <i class="bx bxs-user"></i>
+                    <i className="bx bxs-user"></i>
                     <Link to="/account">Tài khoản</Link>
                   </li>
                   <li>
-                    <i class="bx bx-log-in-circle"></i>
+                    <i className="bx bx-log-in-circle"></i>
                     <Link to="/auth/login" onClick={handleLogout}>
                       Đăng xuất
                     </Link>
@@ -93,6 +96,70 @@ const Header = () => {
           {login && <span className="username">{login.username}</span>}
         </div>
       </nav>
+      {showList && (
+        <div className="overlay" onClick={handleShowList}>
+          <div className="wrapper-content">
+            <div className="wrapper-header">
+              <i class="bx bx-message-x"></i>
+            </div>
+            <div className="wrapper-body">
+              <ul>
+                <li>
+                  {login ? (
+                    <div className="user-avatar" onClick={handleDropdownToggle}>
+                      <img src="/images/class_cap1.jpg" alt="" />
+                    </div>
+                  ) : (
+                    <Link to="/auth/login" className="action-link">
+                      Đăng Nhập
+                    </Link>
+                  )}
+                  {login && <span className="username">{login.username}</span>}
+                </li>
+
+                <li>
+                  <i className="bx bx-home" />
+                  <Link to={"/"} className="Link">
+                    Trang chủ
+                  </Link>
+                </li>
+                <li>
+                  <i className="bx bx-outline"></i>
+                  <Link to={"/roadmap-list"} className="Link">
+                    Lộ trình
+                  </Link>
+                </li>
+                <li>
+                  <i className="bx bxs-book-open"></i>
+                  <Link to={"/course-list"} className="Link">
+                    Khoá học
+                  </Link>
+                </li>
+                <li>
+                  {userLocal && (
+                    <>
+                      <i className="bx bxs-book-alt"></i>
+                      <Link to={"/mycourse"} className="Link">
+                        Khoá học của tôi
+                      </Link>
+                    </>
+                  )}
+                </li>
+                {login && <li>
+                  <i className="bx bx-log-in-circle"></i>
+                  <Link
+                    to="/auth/login"
+                    onClick={handleLogout}
+                    className="Link"
+                  >
+                    Đăng xuất
+                  </Link>
+                </li>}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

@@ -15,7 +15,7 @@ const SidebarAdmin = () => {
               router.pathname === "/admin" ? "nav-item active" : "nav-item"
             }
           >
-            <i class="fa-solid fa-house"></i>
+            <i className="fa-solid fa-house"></i>
           </li>
         </Link>
         <Link className="nav-link" to="/admin/manager-user">
@@ -26,7 +26,7 @@ const SidebarAdmin = () => {
                 : "nav-item"
             }
           >
-            <i class="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i>
           </li>
         </Link>
         <Link className="nav-link" to="/auth/login">

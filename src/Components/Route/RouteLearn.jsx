@@ -12,7 +12,7 @@ const RouteLearn = () => {
         </div>
         <div className="filter-item">
           <input type="text" placeholder="Tìm kiếm khoá học" />
-          <i class="bx bx-search"></i>
+          <i className="bx bx-search"></i>
         </div>
       </div>
       <div className="route-learn-course">
