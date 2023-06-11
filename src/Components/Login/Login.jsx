@@ -39,11 +39,24 @@ const Login = () => {
     if (inputValue.email !== "" && inputValue.password !== "") {
       try {
         const data = await dispatch(login(inputValue)).unwrap();
-        data && navigate("/");
+        toast.success("Đăng nhập thành công!", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        data &&
+          setTimeout(() => {
+            navigate("/"); // Chuyển hướng sau 2 giây
+          }, 3000);
       } catch (error) {
         toast.error(error.message, {
           position: "top-right",
-          autoClose: 5000,
+          autoClose: 3000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
