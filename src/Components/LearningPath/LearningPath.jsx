@@ -16,7 +16,7 @@ const LearningPath = () => {
           </div>
           <div className="path-content">
             <div className="path-content-title">
-              <h5>Web Fullstack Java V2.0</h5>
+              <h5>Web Front-End-ReactJs V2.0</h5>
             </div>
 
             <div>
@@ -41,7 +41,7 @@ const LearningPath = () => {
           </div>
           <div className="path-content">
             <div className="path-content-title">
-              <h5>Web Fullstack Java V2.0</h5>
+              <h5>Web Front-End-ReactJs V2.0</h5>
             </div>
 
             <div>
@@ -66,7 +66,7 @@ const LearningPath = () => {
           </div>
           <div className="path-content">
             <div className="path-content-title">
-              <h5>Web Fullstack Java V2.0</h5>
+              <h5>Web Front-End-ReactJs V2.0</h5>
             </div>
 
             <div>
@@ -91,7 +91,7 @@ const LearningPath = () => {
           </div>
           <div className="path-content">
             <div className="path-content-title">
-              <h5>Web Fullstack Java V2.0</h5>
+              <h5>Web Front-End-ReactJs V2.0</h5>
             </div>
 
             <div>
@@ -112,7 +112,7 @@ const LearningPath = () => {
       </div>
       <div className="all-course">
         <div className="link-all-course">
-          <Link to="">
+          <Link to="/roadmap-list">
             <strong>Xem tất cả</strong>
           </Link>
         </div>

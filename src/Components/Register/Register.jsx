@@ -3,9 +3,10 @@ import "./Register.css";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/reducer/userSlice";
 import { ToastContainer, toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate()
   const [inputValue, setInputValue] = useState({
     username: "",
     email: "",
@@ -43,7 +44,7 @@ const Register = () => {
         await dispatch(register(inputValue)).unwrap();
         toast.success("Đăng ký thành công!", {
           position: "top-right",
-          autoClose: 5000,
+          autoClose: 2000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -51,8 +52,11 @@ const Register = () => {
           progress: undefined,
           theme: "light",
         });
+        
+        setTimeout(() => {
+          navigate("/auth/login"); // Chuyển hướng sau 2 giây
+        }, 2000);
       } catch (error) {
-        console.log("aaaa");
         toast.error(error.message, {
           position: "top-right",
           autoClose: 5000,

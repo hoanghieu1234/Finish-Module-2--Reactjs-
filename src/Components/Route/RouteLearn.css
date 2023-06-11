@@ -65,19 +65,24 @@
 }
 .roadmap-item-image img {
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .roadmap-item-icon  {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    align-items: start;
     gap: 10px;
 }
 
 .roadmap-item-icon h5 {
     margin-left: 10px;
     font-size: 15px;
+    text-align: left;
+}
+
+.roadmap-item-icon p {
+    text-align: left;
+    padding: 10px;
 }
 
 

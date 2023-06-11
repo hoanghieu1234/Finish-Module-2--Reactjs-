@@ -52,7 +52,6 @@ const Manager_user = () => {
                   <td>{user.username}</td>
                   <td>{user.email}</td>
                   <td>
-                    <button className="btn btn-edit">Edit</button>
                     <button
                       className="btn btn-delete"
                       onClick={() => handleDelete(user.id)}

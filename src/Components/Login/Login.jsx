@@ -6,6 +6,12 @@ import { login } from "../../redux/reducer/userSlice";
 import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  // show password
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
   // Khi vào trang đăng nhập thì thông tin đăng nhập sẽ đc xoá đi
   useEffect(() => {
     localStorage.removeItem("accessTokenRegister");
@@ -31,7 +37,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (inputValue.email !== "" && inputValue.password !== "") {
-  
       try {
         const data = await dispatch(login(inputValue)).unwrap();
         data && navigate("/");
@@ -46,7 +51,6 @@ const Login = () => {
           progress: undefined,
           theme: "light",
         });
-        
       }
     } else {
       if (inputValue.email === "") {
@@ -72,7 +76,7 @@ const Login = () => {
         pauseOnHover
         theme="light"
       />
-        <ToastContainer />
+      <ToastContainer />
 
       <div className="login-Form">
         <form onSubmit={handleSubmit} id="form-container">
@@ -88,27 +92,30 @@ const Login = () => {
               name="email"
               value={inputValue.email}
               onChange={handleInputChange}
-              className={errEmail ? "error" : ''}
+              className={errEmail ? "error" : ""}
             />
             {errEmail && <span className="err-msg">Nhập email của bạn</span>}
           </div>
           <div className="login-password">
             <label htmlFor="">Password</label>
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               id="loginForm-password"
               placeholder="Password"
               name="password"
               value={inputValue.password}
               onChange={handleInputChange}
-              className={errPassword ? "error" : ''}
+              className={errPassword ? "error" : ""}
             />
             {errPassword && (
               <span className="err-msg">Nhập password của bạn </span>
             )}
-            <i className="fa-sharp fa-solid fa-eye-slash"></i>
+            <i
+              className={`fa ${showPassword ? "fa-eye" : "fa-eye-slash"}`}
+              onClick={handleShowPassword}
+            ></i>
           </div>
-          <Link to ="/auth/register" className="login-forgot-password">
+          <Link to="/auth/register" className="login-forgot-password">
             <span>Bạn chưa có tài khoản ?</span>
           </Link>
           <button type="submit">Đăng Nhập</button>

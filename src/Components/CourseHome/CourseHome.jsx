@@ -14,7 +14,7 @@ const CourseHome = () => {
           <h4>Những Khoá Học Mới Nhất</h4>
         </div>
         <div className="view-all-course">
-          <a href="//">
+          <a href="/course-list">
             <span>Xem Tất Cả</span>
           </a>
         </div>
