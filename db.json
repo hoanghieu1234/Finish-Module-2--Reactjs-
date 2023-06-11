@@ -8,18 +8,11 @@
       "role": 1
     },
     {
-      "email": "dddd@gmail.com",
-      "password": "$2a$10$/ZSrNMDf9xE1ByyAs/I9Zu.uQgyb4/fSSryeNTQS3iOz8qzAMEZyi",
-      "username": "dddd@gmail.com",
+      "email": "hieu123@gmail.com",
+      "password": "$2a$10$jOrQAPnt2BPhhH/cumFYYulLF9dFxRm376iMzbp4kNga9wpe/m3RG",
+      "username": "Nguyễn Hoàng Hiếu",
       "role": 2,
-      "id": 4
-    },
-    {
-      "email": "h@gmail.com",
-      "password": "$2a$10$FiVdBMAIoVH93FdK9eo19.kAnJUBpweHUd98Q57AR7Zi.Xt.abPii",
-      "username": "hhh",
-      "role": 2,
-      "id": 5
+      "id": 7
     }
   ],
   "NewCourses": [
@@ -32,36 +25,20 @@
       "id": 8
     },
     {
-      "namecourse": "[Partime] Web-front-end Fudamentaljhhjh",
-      "image": "/images/reactjs.png",
+      "namecourse": "[Fulltime] Web-Back-End-NextJs",
+      "image": "https://firebasestorage.googleapis.com/v0/b/upload-a8923.appspot.com/o/images%2Fnextjs.png?alt=media&token=75945540-f0cb-4979-a03f-f834e0b17ec0",
       "lesson": "21 bài học",
       "hours": "192 giờ",
       "session": [],
       "id": 9
     },
     {
-      "namecourse": "[Partime] Web-front-end Fudamental5625262",
-      "image": "/images/reactjs.png",
+      "namecourse": "[Fulltime] Mobie-Java",
+      "image": "https://firebasestorage.googleapis.com/v0/b/upload-a8923.appspot.com/o/images%2Fjava.png?alt=media&token=94850a10-ece6-4071-a968-87fc5eb3dc23",
       "lesson": "21 bài học",
       "hours": "192 giờ",
       "session": [],
       "id": 10
-    },
-    {
-      "namecourse": "[Partime] Web-front-end Fudamental5625262",
-      "image": "/images/reactjs.png",
-      "lesson": "21 bài học",
-      "hours": "192 giờ",
-      "session": [],
-      "id": 11
-    },
-    {
-      "namecourse": "[Partime] Web-front-end Fudamental",
-      "image": "/images/reactjs.png",
-      "lesson": "21 bài học",
-      "hours": "192 giờ",
-      "session": [],
-      "id": 12
     }
   ]
 }
